@@ -6,9 +6,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  myVariable: string =  'The force is with me';
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  updateMyValue() {
+    this.myVariable = 'Now the force is even stronger!';
   }
 
 }
